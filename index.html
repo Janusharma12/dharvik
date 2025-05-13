@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <meta name="description" content="Professional portfolio showcasing my work and skills">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-indigo-600">Portfolio</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-indigo-600 transition">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-indigo-600 transition">About</a>
+                    <a href="#projects" class="text-gray-700 hover:text-indigo-600 transition">Projects</a>
+                    <a href="#skills" class="text-gray-700 hover:text-indigo-600 transition">Skills</a>
+                    <a href="#experience" class="text-gray-700 hover:text-indigo-600 transition">Experience</a>
+                    <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <i class="fas fa-bars text-gray-700 text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="text-gray-700 hover:text-indigo-600 transition">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-indigo-600 transition">About</a>
+                    <a href="#projects" class="text-gray-700 hover:text-indigo-600 transition">Projects</a>
+                    <a href="#skills" class="text-gray-700 hover:text-indigo-600 transition">Skills</a>
+                    <a href="#experience" class="text-gray-700 hover:text-indigo-600 transition">Experience</a>
+                    <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Dharvik Sharma</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">Full Stack Developer</h2>
+                <p class="text-lg mb-8 max-w-lg">I build modern, responsive websites and web applications with clean code and intuitive user experiences.</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">Hire Me</a>
+                    <a href="#projects" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-indigo-600 transition">My Work</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="image/dharvik1.jpg" alt="Professional headshot of Dharvik Sharma" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <img src="image/dharvik4.jpg" alt="Sarah working on her laptop" class="rounded-lg shadow-md w-full max-w-xs md:max-w-md">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <p class="text-lg mb-6">To become a successful expert in the field of Information Technology
+                        by channelizing my technical knowledge and skills to ensure personal and professional growth and to contribute to the prosperity of the
+                        organization.
+                        </p>
+                    <p class="text-lg mb-6">My approach focuses on creating efficient, scalable solutions with clean code and excellent user experiences. I'm dedicated to continuous learning and staying updated with the latest technologies.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-gray-100 px-4 py-3 rounded-lg">
+                            <span class="font-medium block text-gray-500">Name:</span>
+                            <span>Dharvik Sharma</span>
+                        </div>
+                        <div class="bg-gray-100 px-4 py-3 rounded-lg">
+                            <span class="font-medium block text-gray-500">Email:</span>
+                            <span>dharviksharma1527@gmail.com</span>
+                        </div>
+                        <div class="bg-gray-100 px-4 py-3 rounded-lg">
+                            <span class="font-medium block text-gray-500">Location:</span>
+                            <span>Jaipur, India</span>
+                        </div>
+                        <div class="bg-gray-100 px-4 py-3 rounded-lg">
+                            <span class="font-medium block text-gray-500">Availability:</span>
+                            <span>Open to work</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://dochub.com/m/shared-document/dharvik-sharma/6mO8oy7Kpvb1bg4wqg5p9J/janu-sharma-resume-pdf?dt=6dSzVkdZ7zA8iMG4nJzi" 
+                           target="_blank" 
+                           rel="noopener" 
+                           class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition inline-flex items-center">
+                            <i class="fas fa-download mr-2"></i> View / Download CV
+                        </a>
+                        <a href="#contact" class="border-2 border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 transition inline-flex items-center">
+                            <i class="fas fa-paper-plane mr-2"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">My Projects</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Here are some of my recent projects. Each one was built to solve specific problems and deliver value.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="image/image.png" alt="E-commerce dashboard interface" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <div class="absolute inset-0 bg-indigo-600 bg-opacity-0 hover:bg-opacity-20 transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Foodie Website</h3>
+                        <p class="text-gray-600 mb-4">A complete online store with product management, cart functionality, and secure checkout.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">HTML</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">CSS</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="https://janusharma12.github.io/Food-website/" class="text-indigo-600 font-medium hover:underline flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-indigo-600">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="image/farniture.png" alt="Task management application interface" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <div class="absolute inset-0 bg-indigo-600 bg-opacity-0 hover:bg-opacity-20 transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Furniture Website</h3>
+                        <p class="text-gray-600 mb-4">Explore handcrafted furniture made to last.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">HTML</span>
+                            <span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">CSS</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-indigo-600 font-medium hover:underline flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-indigo-600">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="image/coffee .png" alt="Coffee website homepage design" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <div class="absolute inset-0 bg-indigo-600 bg-opacity-0 hover:bg-opacity-20 transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Coffee Website</h3>
+                        <p class="text-gray-600 mb-4">From the farm to your cup—experience the journey of exceptional coffee with every sip.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">HTML CSS </span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-indigo-600 font-medium hover:underline flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-indigo-600">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">My Skills</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">I've worked with a variety of technologies in the web development world.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <!-- Skill 1 -->
+                <div class="skill-card bg-gray-50 rounded-lg p-6 flex flex-col items-center transition duration-300">
+                    <i class="fab fa-html5 text-5xl text-orange-500 mb-3"></i>
+                    <span class="font-medium">HTML5</span>
+                    <span class="text-xs text-gray-500 mt-1">Advanced</span>
+                </div>
+                
+                <!-- Skill 2 -->
+                <div class="skill-card bg-gray-50 rounded-lg p-6 flex flex-col items-center transition duration-300">
+                    <i class="fab fa-css3-alt text-5xl text-blue-500 mb-3"></i>
+                    <span class="font-medium">CSS3</span>
+                    <span class="text-xs text-gray-500 mt-1">Advanced</span>
+                </div>
+                
+                <!-- Skill 3 -->
+                <div class="skill-card bg-gray-50 rounded-lg p-6 flex flex-col items-center transition duration-300">
+                    <i class="fab fa-js text-5xl text-yellow-400 mb-3"></i>
+                    <span class="font-medium">JavaScript</span>
+                    <span class="text-xs text-gray-500 mt-1">Expert</span>
+                </div>
+                
+                <!-- Skill 4 -->
+                <div class="skill-card bg-gray-50 rounded-lg p-6 flex flex-col items-center transition duration-300">
+                    <i class="fab fa-react text-5xl text-blue-400 mb-3"></i>
+                    <span class="font-medium">React</span>
+                    <span class="text-xs text-gray-500 mt-1">Expert</span>
+                </div>
+                
+                <!-- Skill 5 -->
+                <div class="skill-card bg-gray-50 rounded-lg p-6 flex flex-col items-center transition duration-300">
+                    <i class="fa-brands fa-java"></i>
+                    <span class="font-medium">Java</span>
+                    <span class="text-xs text-gray-500 mt-1">Advanced</span>
+                </div>
+                
+                <!-- Skill 6 -->
+                <div class="skill-card bg-gray-50 rounded-lg p-6 flex flex-col items-center transition duration-300">
+                    <i class="fas fa-database text-5xl text-gray-600 mb-3"></i>
+                    <span class="font-medium">MySQL</span>
+                    <span class="text-xs text-gray-500 mt-1">Intermediate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">Experience & Education</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">My academic background.</p>
+            
+            <div class="max-w-3xl mx-auto space-y-8">
+                <!-- Experience 2 -->
+                <div class="flex items-start">
+                    <div class="bg-indigo-600 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                        <i class="fas fa-briefcase text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Frontend Developer</h3>
+                        <p class="text-gray-600 mb-2">Yatharth Educational Services pvt ltd. • May-2023 - July-2024</p>
+                        <p class="text-gray-700">
+                            Built responsive UI using HTML, CSS, and JavaScript. Collaborated with backend developers and maintained clean code practices.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Education -->
+                <div class="flex items-start">
+                    <div class="bg-indigo-800 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                        <i class="fas fa-graduation-cap text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Bachelor Of Computer Application</h3>
+                        <p class="text-gray-600 mb-2">Poornima University • 2022 - 2025</p>
+                        <p class="text-gray-700">Specialized in General with Computer Engineering. Graduated with honors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">Get In Touch</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Have a project in mind or want to discuss opportunities? Feel free to reach out!</p>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-50 rounded-xl p-8 md:p-12 shadow-sm">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-indigo-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-indigo-700 transition w-full md:w-auto">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                    <div class="bg-gray-50 rounded-lg p-6 text-center">
+                        <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-envelope text-indigo-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-1">Email</h3>
+                        <p class="text-gray-600">dharviksharma1527@gmail.com</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-6 text-center">
+                        <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-phone-alt text-indigo-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-1">Phone</h3>
+                        <p class="text-gray-600">+91 7732941527</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-6 text-center">
+                        <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-map-marker-alt text-indigo-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-1">Location</h3>
+                        <p class="text-gray-600">Jaipur, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-bold">Dharvik Sharma</a>
+                    <p class="mt-2 text-gray-400">Full Stack Developer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/Janusharma12" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/janu-sharma-21bbb8256/" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="https://www.facebook.com/people/Dharvik-Sharma/100083286740558/" class="text-gray-400 hover:text-white transition">
+                        <i class="fa-brands fa-facebook text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mr_dharvik._" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>© 2025 Dharvik Sharma. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    if (this.getAttribute('href') !== '#') {
+                        e.preventDefault();
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                        // Close mobile menu if open
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+
+            // Contact form submission
+            const contactForm = document.getElementById('contact-form');
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const formData = new FormData(contactForm);
+                const data = Object.fromEntries(formData.entries());
+                
+                // Here you would typically send the data to a server
+                // For this example, we'll use FormSubmit.co as a simple solution
+                fetch('https://formsubmit.co/ajax/janusharma7732@gmail.com', {
+                    method: 'POST',
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Show success message
+                    const notification = document.createElement('div');
+                    notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg';
+                    notification.textContent = 'Message sent successfully!';
+                    document.body.appendChild(notification);
+                    setTimeout(() => {
+                        notification.remove();
+                    }, 3000);
+                    
+                    // Reset form
+                    contactForm.reset();
+                })
+                .catch(error => {
+                    // Show error message
+                    const notification = document.createElement('div');
+                    notification.className = 'fixed bottom-4 right-4 bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg';
+                    notification.textContent = 'Error sending message. Please try again.';
+                    document.body.appendChild(notification);
+                    setTimeout(() => {
+                        notification.remove();
+                    }, 3000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
